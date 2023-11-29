@@ -1,3 +1,11 @@
+## 0.2.0 (2021-09-01)
+
+* Now defsection does not exports symbols by default
+
+* You can render documents in multiple formats in a single run having cross links.
+  For example shorter `README`.md could mention symbols and have correct
+  links to the full documentation
+
 ## 0.1.0 (2021-05-01)
 
 * Project forked from [MGL-PAX][7927].
