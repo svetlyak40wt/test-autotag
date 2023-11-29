@@ -16,7 +16,7 @@ jobs:
         regex_pattern: "^## (?<version>\\d+\\.\\d+\\.\\d+([^ ]+)?).*$"
         root: ./ChangeLog.md
         tag_prefix: "v"
-      env:
-        GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
       # env:
-      #   GITHUB_TOKEN: "${{ secrets.DEPLOY_TRIGGER_TOKEN }}"
+      #   GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+      env:
+        GITHUB_TOKEN: "${{ secrets.DEPLOY_TRIGGER_TOKEN }}"
