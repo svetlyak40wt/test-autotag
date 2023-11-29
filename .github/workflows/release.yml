@@ -1,0 +1,38 @@
+{
+  "name": "RELEASE",
+  "on": {
+    "push": {
+      "branches": [
+        "main"
+      ]
+    }
+  },
+  "jobs": {
+    "autotag": {
+      "runs-on": "ubuntu-latest",
+      "env": {
+        "OS": "ubuntu-latest",
+        "QUICKLISP_DIST": "quicklisp",
+        "LISP": "sbcl-bin"
+      },
+      "steps": [
+        {
+          "name": "Checkout Code",
+          "uses": "actions/checkout@v3"
+        },
+        {
+          "name": "Setup Common Lisp Environment",
+          "uses": "butlerlogic/action-autotag@8bc1ad456dcdee34e8c6ffbce991cc31793578c2",
+          "with": {
+            "root": "ChangeLog.md",
+            "regex_pattern": "^## (?<version>\\d+\\.\\d+\\.\\d+([^ ]+)?).*$",
+            "tag_prefix": "v"
+          },
+          "env": {
+            "GITHUB_TOKEN": "${{ secrets.DEPLOY_TRIGGER_TOKEN }}"
+          }
+        }
+      ]
+    }
+  }
+}
