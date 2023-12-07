@@ -5,6 +5,7 @@ name: RELEASE
       - main
 jobs:
   autotag:
+    runs-on: ubuntu-latest
     permissions:
       contents: write
     steps:
