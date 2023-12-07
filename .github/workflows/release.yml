@@ -10,7 +10,7 @@
   "jobs": {
     "autotag": {
       "permissions": {
-          "pull-requests": "write",
+          "contents": "write"
       },
       "runs-on": "ubuntu-latest",
       "env": {
