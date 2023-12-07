@@ -1,3 +1,7 @@
+## 0.5.0
+
+Some other release.
+
 ## 0.4.0
 
 Preapring release.
