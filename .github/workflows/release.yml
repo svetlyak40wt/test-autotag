@@ -29,7 +29,7 @@
             "tag_prefix": "v"
           },
           "env": {
-            "GITHUB_TOKEN": "${{ secrets.DEPLOY_TRIGGER_TOKEN }}"
+            "GITHUB_TOKEN": "${{ secrets.GITHUB_TOKEN }}"
           }
         }
       ]
