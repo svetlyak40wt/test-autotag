@@ -9,6 +9,11 @@
   },
   "jobs": {
     "autotag": {
+      "permissions": {
+          "contents": "write",
+          "issues": "write",
+          "pull-requests": "write",
+      },
       "runs-on": "ubuntu-latest",
       "env": {
         "OS": "ubuntu-latest",
