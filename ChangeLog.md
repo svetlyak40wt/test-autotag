@@ -1,3 +1,7 @@
+## 0.6.0
+
+New release! Horay!
+
 ## 0.5.2
 
 Updated workflow.
