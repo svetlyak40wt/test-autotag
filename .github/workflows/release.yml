@@ -10,13 +10,11 @@
   "jobs": {
     "autotag": {
       "permissions": {
-          "contents": "write"
+        "contents": "write"
       },
       "runs-on": "ubuntu-latest",
       "env": {
-        "OS": "ubuntu-latest",
-        "QUICKLISP_DIST": "quicklisp",
-        "LISP": "sbcl-bin"
+        "OS": "ubuntu-latest"
       },
       "steps": [
         {
